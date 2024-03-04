@@ -1,7 +1,11 @@
-@extends('layout.header')
-@extends('layout.footer')
-@section('content')
 
-@extends('layout.main')
+
+@section('content')
+@extends('layouts.footer')
+
+@extends('layouts.header')
+
+@extends('layouts.content')
+
 
 @endsection

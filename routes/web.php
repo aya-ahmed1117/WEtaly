@@ -14,12 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('dashboard.pages.home');
+});
 
-Route::get('/' , function(){ return View('wetaly');});
-Route::get('/milk' , function(){ return View('milk');});
+// Route::get('/' , function(){ return View('wetaly');});
+// Route::get('/milk' , function(){ return View('milk');});
 
-//dashboard
-Route::get('/dashboard', function(){ return view('dashboardAdmin');} );
+// //dashboard
+// Route::get('/dashboard', function(){ return view('dashboardAdmin');} );
+
