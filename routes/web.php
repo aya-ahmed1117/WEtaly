@@ -14,9 +14,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/dashboard', function () {
     return view('dashboard.pages.home');
 });
+Route::get('/dashboard/login', function () {
+    return view('dashboard.pages.login');
+});
+
+//website
+Route::get('/wetaly', function () {
+    return view('wetaly');
+});
+
+
+// Route::get('/', function () {
+//     return view('front_end.pages.home');
+// });
 
 // Route::get('/' , function(){ return View('wetaly');});
 // Route::get('/milk' , function(){ return View('milk');});
