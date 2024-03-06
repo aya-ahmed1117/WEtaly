@@ -92,24 +92,24 @@ GENERAL
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap");
 
 :root {
-  --primary: #e3d270;
-  --secondary: #75b16c;
+  --primary: #3b51cf;
+  --secondary: #2733d5;
 
-  --primary-link: #75b16c;
-  --primary-link-hover: #75b16c;
+  --primary-link: #2733d5;
+  --primary-link-hover: #2733d5;
 
-  --primary-btn: #e3d270;
-  --primary-btn-hover: #e3d270;
+  --primary-btn: #3b51cf;
+  --primary-btn-hover: #3b51cf;
 
-  --secondary-btn: #75b16c;
-  --secondary-btn-hover: #75b16c;
+  --secondary-btn: #2733d5;
+  --secondary-btn-hover: #2733d5;
 
   --site-radius: 5px;
 
   --title-color: #000222;
   --title-family: "Cormorant";
 }
-
+/*rgb(39 5 227 / 80%)*/
 /*===GENERAL===*/
 .site-text-primary {
   color: #022279;
@@ -127,7 +127,7 @@ GENERAL
   color: #fff;
 }
 .site-bg-primary {
-  background-color: #e3d270;
+  background-color: #3b51cf;
 }
 .site-bg-black {
   background-color: #000;
@@ -1675,10 +1675,10 @@ ol li {
 }
 
 .site-button-link:hover {
-  color: #75b16c;
+  color: #2733d5;
 }
 .site-button-link:hover .btn-arrow-icon {
-  color: #75b16c;
+  color: #2733d5;
   -moz-transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
   -o-transform: rotate(360deg);
@@ -1696,7 +1696,7 @@ ol li {
   overflow: hidden;
   cursor: pointer;
   display: inline-table;
-  background-color: #e3d270;
+  background-color: #3b51cf;
   border: none;
   font-size: 16px;
   transition: 0.5s all ease;
@@ -1731,7 +1731,7 @@ ol li {
   overflow: hidden;
   cursor: pointer;
   display: inline-block;
-  background-color: #75b16c;
+  background-color: #2733d5;
   border: none;
   font-size: 16px;
   transition: 0.5s all ease;
@@ -2734,7 +2734,7 @@ THEMEFOREST REQUIRED CLASSES
 @media (max-width: 991px) {
   .header-nav .nav > li.active > a,
   .header-nav .nav > li.current-menu-item > a {
-    color: #75b16c;
+    color: #2733d5;
   }
 }
 @media (max-width: 991px) {
@@ -2748,10 +2748,10 @@ THEMEFOREST REQUIRED CLASSES
 .header-nav .nav > li.active > a,
 .header-nav .nav > li.current-menu-item > a {
   background-color: transparent;
-  color: #75b16c;
+  color: #2733d5;
 }
 .header-nav .nav > li:hover > a {
-  color: #75b16c;
+  color: #2733d5;
 }
 .header-nav .nav > li:hover > .sub-menu {
   opacity: 1;
@@ -2799,11 +2799,11 @@ THEMEFOREST REQUIRED CLASSES
   font-weight: 600;
 }
 .header-nav .nav > li .sub-menu li a:hover {
-  color: #75b16c;
+  color: #2733d5;
   text-decoration: none;
 }
 .header-nav .nav > li .sub-menu li:hover > a {
-  color: #75b16c;
+  color: #2733d5;
 }
 .header-nav .nav > li .sub-menu li:last-child {
   border-bottom: 0px;
@@ -3449,7 +3449,7 @@ THEMEFOREST REQUIRED CLASSES
   color: #ff8a00;
 }
 button.scroltop {
-  background: #6da565;
+  background: #3b51cf;
   border: none;
   position: fixed;
   right: 10px;
@@ -3469,7 +3469,8 @@ button.scroltop {
   z-index: 999;
 }
 button.scroltop:hover {
-  background: #e3d270;
+  
+  background: #6da565;
 }
 
 /*Widget News-Letter*/
@@ -5679,7 +5680,7 @@ SIMPLE INNER SCROLLBAR
   color: #fff;
 }
 .text-primary {
-  color: #75b16c !important;
+  color: #2733d5 !important;
 }
 .text-black {
   color: #000;
@@ -7852,7 +7853,7 @@ body[class*="active-"] .cs-message-panel {
   left: 0px;
   width: 100%;
   height: 100%;
-  background-image: url("../images/about-bg.png");
+  background-image: url("{{asset('assets/frontend/images/about-bg.png')}}");
 }
 
 .site-footer.footer-gradient {
@@ -7890,7 +7891,7 @@ body[class*="active-"] .cs-message-panel {
   color: #a1a471;
 }
 .aon-socila-icon li a:hover {
-  color: #75b16c;
+  color: #2733d5;
 }
 
 .aon-f-title {
@@ -7899,8 +7900,9 @@ body[class*="active-"] .cs-message-panel {
   margin-bottom: 30px;
 }
 .aon-foo-copyright {
-  background-color: #e3d270;
+  /* background-color: #3b51cf; */
   font-family: "";
+  color: #006599;
 }
 
 .aon-footer-logo {
@@ -7968,13 +7970,13 @@ body[class*="active-"] .cs-message-panel {
 }
 
 .aon-footer-bottom-area {
-  color: #777;
-  background-color: #e3d270;
+  color: #eee;
+  background-color: #f3f6ea;
   padding: 37px 20px;
   border-radius: var(--site-radius);
 }
 .aon-footer-bottom-area span {
-  color: #000;
+  color: black;
 }
 
 .aon-doctorAbout-wrap {
@@ -8055,7 +8057,7 @@ body[class*="active-"] .cs-message-panel {
   position: absolute;
   top: 0px;
   right: 0px;
-  color: #75b16c;
+  color: #2733d5;
   padding: 3px 10px;
   background: none;
   border: none;
@@ -8943,7 +8945,7 @@ body[class*="active-"] .cs-message-panel {
   margin: 0px;
 }
 .aon-photo-gallery {
-  background-image: url("../images/gallery.jpg");
+  background-image: url("{{asset('assets/frontend/images/gallery.jpg')}}");
   height: 250px;
   border-radius: 10px;
   background-position: center;
@@ -8962,7 +8964,7 @@ body[class*="active-"] .cs-message-panel {
 }
 
 .aon-video-gallery {
-  background-image: url("../images/video.jpg");
+  background-image: url("{{asset('assets/frontend/images/video.jpg')}}");
   height: 250px;
   border-radius: 10px;
   background-position: center;
@@ -9845,7 +9847,7 @@ body[class*="active-"] .cs-message-panel {
 
 .aon-med-appoint-area {
   padding: 90px 0px;
-  background-image: url(../images/background/bg2.jpg);
+  background-image: url("{{asset('assets/frontendmages/background/bg2.jpg')}}");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -10285,7 +10287,7 @@ body[class*="active-"] .cs-message-panel {
   top: 0px;
   left: 0px;
   position: absolute;
-  background-image: url(../images/testimonial-img/left-lines.png);
+  background-image: url("{{asset('assets/frontendmages/testimonial-img/left-lines.png')}}");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -10387,7 +10389,7 @@ body[class*="active-"] .cs-message-panel {
   top: 0px;
   right: 0px;
   position: absolute;
-  background-image: url(../images/testimonial-img/right-lines.png);
+  background-image: url("{{asset('assets/frontendmages/testimonial-img/right-lines.png')}}");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -10544,7 +10546,7 @@ body[class*="active-"] .cs-message-panel {
 /*Home page Two CSS*/
 .aon-banner2-wrap {
   background-color: #2c6c5e;
-  background-image: url("../images/banner2/bg.jpg");
+  background-image: url("{{asset('assets/frontend/images/banner2/bg.jpg')}}");
   padding-top: 100px;
 }
 .aon-banner2-row {
@@ -10905,7 +10907,7 @@ body[class*="active-"] .cs-message-panel {
 
 .aon-sub-title {
   font-family: var(--title-family);
-  color: #75b16c;
+  color: #2733d5;
   text-transform: uppercase;
   font-size: 16px;
   letter-spacing: 3px;
@@ -10920,7 +10922,7 @@ body[class*="active-"] .cs-message-panel {
 
 .aon-med-appoint-area2 {
   padding: 10px 0px 0px 0px;
-  background-image: url(../images/background/bg3.jpg);
+  background-image: url("{{asset('assets/frontendimages/background/bg3.jpg')}}");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -11610,7 +11612,7 @@ body[class*="active-"] .cs-message-panel {
 }
 .aon-med-provider-mid-wrap {
   padding: 40px;
-  background-image: url(../images/background/bg4.jpg);
+  background-image: url("{{asset('assets/frontendmages/background/bg4.jpg')}}");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -12012,7 +12014,7 @@ body[class*="active-"] .cs-message-panel {
   height: 100%;
 }
 .aon-page-benner-area {
-  background-image: url(../images/banner/job-banner.jpg);
+  background-image: url("{{asset('assets/frontendmages/banner/job-banner.jpg')}}");
   position: relative;
 }
 .sf-banner-heading-wrap {
@@ -13829,7 +13831,7 @@ BLog Post Comment Section
 }
 .aon-login-left {
   background: #ddd;
-  background-image: url("../images/banner2/bg.jpg");
+  background-image: url("{{asset('assets/frontend/images/banner2/bg.jpg')}}");
   background-size: cover;
   background-position: right center;
   width: calc(100% - 600px);
@@ -15602,7 +15604,7 @@ div.dataTables_wrapper div.dataTables_filter input {
 
 .cssload-letter {
   font-size: 60px;
-  color: #e3d270;
+  color: #3b51cf;
   font-family: tahoma;
 }
 
@@ -15624,6 +15626,8 @@ div.dataTables_wrapper div.dataTables_filter input {
 .cssload-cupcakeInner,
 .cssload-cupcakeCore {
   border-radius: 50%;
+  background-image: url("{{asset('assets/frontend/images/wetaly/184.jpg')}}");
+
 }
 
 .cssload-cupcake,
@@ -15636,6 +15640,7 @@ div.dataTables_wrapper div.dataTables_filter input {
   -ms-flex: none;
   -webkit-flex: none;
   -moz-flex: none;
+  background-image: url("{{asset('assets/frontend/images/wetaly/184.jpg')}}");
 }
 
 .cssload-letter,
@@ -15646,6 +15651,7 @@ div.dataTables_wrapper div.dataTables_filter input {
   -ms-align-self: center;
   -webkit-align-self: center;
   -moz-align-self: center;
+  background-image: url("{{asset('assets/frontend/images/wetaly/184.jpg')}}");
 }
 
 .cssload-cupcakeCircle {
@@ -15661,7 +15667,8 @@ div.dataTables_wrapper div.dataTables_filter input {
   -moz-justify-content: center;
   height: 60px;
   width: 60px;
-  background-color: #75b16c;
+  background-color: #2733d5;
+  background-image: url("{{asset('assets/frontend/images/wetaly/184.jpg')}}");
 }
 
 .cssload-cupcakeInner {
@@ -15713,7 +15720,7 @@ div.dataTables_wrapper div.dataTables_filter input {
   -moz-align-self: center;
   height: 25%;
   width: 25%;
-  background-color: #e3d270;
+  /* background-color: #3b51cf; */
   animation-name: coreAnimate;
   -o-animation-name: coreAnimate;
   -ms-animation-name: coreAnimate;
@@ -16093,7 +16100,7 @@ div.dataTables_wrapper div.dataTables_filter input {
   display: flex;
   padding: 30px 10px;
   align-items: center;
-  background-image: url("../images/commin-soon.jpg");
+  background-image: url("{{asset('assets/frontend/images/commin-soon.jpg')}}");
   background-position: center top;
 }
 .comming-soon-wrap .container {
@@ -16615,7 +16622,7 @@ div.dataTables_wrapper div.dataTables_filter input {
 }
 .aon-topbar-info > li {
   padding: 0px 15px 0px 0px;
-  color: #726a49;
+  color: white;
   display: flex;
   align-items: center;
 }
@@ -16652,13 +16659,13 @@ div.dataTables_wrapper div.dataTables_filter input {
 .topbar-social-icons > li a {
   display: flex;
   padding: 15px 10px;
-  color: #b6a860;
+  color: white;
 }
 .topbar-social-icons > li:last-child a {
   padding-right: 0px;
 }
 .topbar-social-icons > li a:hover {
-  color: #75b16c;
+  color: #2733d5;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -16779,7 +16786,7 @@ div.dataTables_wrapper div.dataTables_filter input {
 #search .search-btn i {
   font-size: 36px;
   line-height: 60px;
-  color: #75b16c;
+  color: #2733d5;
 }
 #search .aon-seach-close {
   position: fixed;
@@ -16792,7 +16799,7 @@ div.dataTables_wrapper div.dataTables_filter input {
   width: 60px;
   height: 60px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  background-color: #75b16c;
+  background-color: #2733d5;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
@@ -16848,7 +16855,7 @@ div.dataTables_wrapper div.dataTables_filter input {
   line-height: 18px;
   font-size: 10px;
   text-align: center;
-  background: #e3d270;
+  background: #3b51cf;
   color: #fff;
   border-radius: 20px;
 }
@@ -16900,7 +16907,7 @@ Home page One CSS
 .aon-banner-top-left-circle {
   width: 150px;
   height: 150px;
-  background-color: #e3d270;
+  background-color: #3b51cf;
   border-radius: 100%;
   position: absolute;
   top: 5%;
@@ -17015,8 +17022,8 @@ Home page One CSS
   padding-bottom: 70px;
 }
 .aon-title-line span {
-  color: #75b16c;
-  background-image: url(../images/text-line.png);
+  color: #2733d5;
+  background-image: url("{{asset('assets/frontend/images/text-line.png')}}");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -17064,7 +17071,7 @@ Home page One CSS
   margin-bottom: 20px;
 }
 .about-year-since {
-  color: #75b16c;
+  color: #2733d5;
   font-size: 48px;
   font-family: "Cormorant";
   font-weight: 700;
@@ -17098,7 +17105,7 @@ Home page One CSS
   transition: all 0.5s linear;
 }
 .aon-about-box:hover {
-  background-color: #75b16c;
+  background-color: #2733d5;
 }
 .aon-about-box:hover .aon-about-title,
 .aon-about-box:hover .aon-about-text {
@@ -17117,7 +17124,7 @@ Home page One CSS
   font-size: 70px;
   line-height: 1;
   display: table;
-  color: #75b16c;
+  color: #2733d5;
 }
 
 .aon-about-box:hover .aon-about-icon i {
@@ -17127,7 +17134,7 @@ Home page One CSS
 .aon-about-icon + .aon-about-circle {
   width: 20px;
   height: 20px;
-  background: #e3d270;
+  background: #3b51cf;
   position: absolute;
   top: 30px;
   left: 30px;
@@ -17141,7 +17148,7 @@ Home page One CSS
 .aon-about-box:hover .aon-about-icon + .aon-about-circle {
   width: 90px;
   height: 90px;
-  background: #e3d270;
+  background: #3b51cf;
   position: absolute;
   top: 30px;
   left: 30px;
@@ -17220,7 +17227,7 @@ Home page One CSS
 .aon-social-circle {
   width: 60px;
   height: 60px;
-  background: #75b16c;
+  background: #2733d5;
   border-radius: 100%;
   color: #fff;
   display: flex;
@@ -17397,7 +17404,7 @@ Home page One CSS
   top: 0px;
   right: 0px;
   border-radius: 100%;
-  border: 5px solid #75b16c;
+  border: 5px solid #2733d5;
   border-right-color: transparent;
   z-index: 2;
   -moz-transform: rotate(-50deg);
@@ -17424,7 +17431,7 @@ Home page One CSS
   right: 15px;
   width: 15px;
   height: 15px;
-  background: #e3d270;
+  background: #3b51cf;
   box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
 }
@@ -17445,7 +17452,7 @@ Home page One CSS
   position: absolute;
   top: 10px;
   left: 0px;
-  background-color: #75b16c;
+  background-color: #2733d5;
   width: 5px;
   height: calc(100% - 20px);
 }
@@ -17460,13 +17467,13 @@ Home page One CSS
   font-size: 18px;
   margin-bottom: 30px;
   font-weight: 700;
-  color: #75b16c;
+  color: #2733d5;
 }
 
 .aon-pro-get-to {
   font-family: "Cormorant";
   padding: 40px;
-  background: #75b16c;
+  background: #2733d5;
   color: #fff;
   margin: -60px 50px 0px;
   position: relative;
@@ -17524,7 +17531,7 @@ Home page One CSS
 }
 .aon-pro-get-icon i {
   font-size: 40px;
-  color: #75b16c;
+  color: #2733d5;
   line-height: 1;
   display: inline-flex;
 }
@@ -17542,7 +17549,7 @@ Home page One CSS
   height: 70px;
   margin-right: 20px;
   font-size: 70px;
-  color: #75b16c;
+  color: #2733d5;
   line-height: 1;
 }
 .aon-pro-title {
@@ -17586,7 +17593,7 @@ Home page One CSS
   width: 100px;
   text-align: center;
   line-height: 100px;
-  background-color: #75b16c;
+  background-color: #2733d5;
   color: #fff;
   z-index: 1;
   font-size: 20px;
@@ -17691,7 +17698,7 @@ Home page One CSS
   margin-bottom: 30px;
 }
 .aon-shop-box:hover {
-  background-color: #75b16c;
+  background-color: #2733d5;
 }
 .aon-shop-box:hover .aon-shop-title,
 .aon-shop-box:hover .aon-shop-text {
@@ -17711,11 +17718,11 @@ Home page One CSS
 .aon-shop-price {
   font-size: 24px;
   font-weight: 700;
-  color: #75b16c;
+  color: #2733d5;
   font-family: "Cormorant";
 }
 .aon-shop-box:hover .aon-shop-price {
-  color: #e3d270;
+  color: #3b51cf;
 }
 .aon-shop-btn {
   background: #ededf0;
@@ -17730,7 +17737,7 @@ Home page One CSS
   margin-left: 10px;
 }
 .aon-shop-btn:hover {
-  background: #e3d270;
+  background: #3b51cf;
   color: #fff;
 }
 .aon-shop-box:hover .aon-shop-btn {
@@ -17738,8 +17745,8 @@ Home page One CSS
   color: #fff;
 }
 .aon-shop-box:hover .aon-shop-btn:hover {
-  background: #e3d270;
-  color: #75b16c;
+  background: #3b51cf;
+  color: #2733d5;
 }
 .view-more-btn {
   padding-top: 20px;
@@ -17794,7 +17801,7 @@ Home page One CSS
 }
 
 .aon-post-date {
-  color: #75b16c;
+  color: #2733d5;
   margin-bottom: 0px;
   display: inline-flex;
   align-items: center;
@@ -17825,7 +17832,7 @@ Home page One CSS
 .aon-post-meta ul li {
   display: inline-flex;
   align-items: center;
-  color: #75b16c;
+  color: #2733d5;
 }
 .post-author-pic {
   margin-right: 15px;
@@ -17902,7 +17909,7 @@ Home page One CSS
   right: 0%;
   width: 0%;
   height: 0%;
-  background-color: #e3d270;
+  background-color: #3b51cf;
   opacity: 0.9;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -17939,7 +17946,7 @@ Home page One CSS
   line-height: 70px;
   z-index: 2;
   text-align: center;
-  background: #75b16c;
+  background: #2733d5;
   color: #fff;
   font-size: 18px;
   border-radius: 50px;
@@ -18017,7 +18024,7 @@ Home page One CSS
   height: 54px;
   font-size: 50px;
   line-height: 1;
-  color: #e3d270;
+  color: #3b51cf;
   margin: 0px auto 30px;
 }
 .aon-testmo-text {
@@ -18043,12 +18050,12 @@ Home page One CSS
 .aon-testmo-rating span {
   display: inline-block;
   padding-right: 3px;
-  color: #e3d270;
+  color: #3b51cf;
   font-size: 16px;
 }
 
 .center .aon-testmo-wrap {
-  border: 2px solid #75b16c;
+  border: 2px solid #2733d5;
   border-radius: 5px;
 }
 
@@ -18176,13 +18183,13 @@ Home page Two CSS
 }
 
 .aon-pricing-box:hover .circle-bg {
-  background-color: #75b16c;
+  background-color: #2733d5;
 }
 .aon-pricing-box:hover .aon-p-title {
   color: #fff;
 }
 .aon-pricing-box:hover .p-price {
-  color: #e3d270;
+  color: #3b51cf;
 }
 .aon-pricing-box:hover .aon-pricing-top .aon-price-right i {
   color: #fff;
@@ -18210,7 +18217,7 @@ Home page Two CSS
   }
 }
 .aon-pricing-box .p-price {
-  color: #75b16c;
+  color: #2733d5;
   font-family: "Cormorant";
   font-size: 64px;
   line-height: 64px;
@@ -18248,12 +18255,12 @@ Home page Two CSS
   position: relative;
   font-size: 70px;
   z-index: 1;
-  color: #75b16c;
+  color: #2733d5;
 }
 .aon-pricing-box .circle-bg .aon-icon-circle {
   width: 90px;
   height: 90px;
-  background: #e3d270;
+  background: #3b51cf;
   position: absolute;
   bottom: 0px;
   right: 20%;
@@ -18265,7 +18272,7 @@ Home page Two CSS
 .aon-pricing-box:hover .circle-bg .aon-icon-circle {
   width: 110px;
   height: 110px;
-  background: #e3d270;
+  background: #3b51cf;
   position: absolute;
   bottom: 8%;
   right: 19%;
@@ -18284,10 +18291,10 @@ Home page Two CSS
 }
 
 .aon-pricing-box-active .aon-pricing-box .circle-bg {
-  background-color: #75b16c;
+  background-color: #2733d5;
 }
 .aon-pricing-box-active .aon-pricing-box .p-price {
-  color: #e3d270;
+  color: #3b51cf;
 }
 .aon-pricing-box-active .aon-pricing-box .aon-p-title {
   color: #fff;
@@ -18299,7 +18306,7 @@ Home page Two CSS
   z-index: 1;
 }
 .aon-count-area-mid {
-  background-color: #75b16c;
+  background-color: #2733d5;
   border-radius: 5px;
   position: relative;
   top: -220px;
@@ -18326,7 +18333,7 @@ Home page Two CSS
   font-size: 64px;
   line-height: 64px;
   font-weight: 800;
-  color: #e3d270;
+  color: #eee;
   margin-bottom: 20px;
   position: relative;
   z-index: 1;
@@ -18336,7 +18343,7 @@ Home page Two CSS
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #c1c1c1;
   z-index: -1;
   opacity: 0.1;
   position: absolute;
@@ -18352,7 +18359,7 @@ Home page Two CSS
 
 /*Testimonial*/
 .aon-testi-area-section {
-  border: 2px solid #75b16c;
+  border: 2px solid #2733d5;
   border-radius: 5px;
   padding-bottom: 50px;
 }
@@ -18389,7 +18396,7 @@ Home page Two CSS
 .aon-testi-block .aon-testi-block-name {
   margin-top: 10px;
   text-transform: uppercase;
-  color: #75b16c;
+  color: #2733d5;
   font-family: "Cormorant";
   font-size: 18px;
   font-weight: 800;
@@ -18398,7 +18405,7 @@ Home page Two CSS
 .aon-df2-rating span {
   display: inline-block;
   padding-right: 3px;
-  color: #e3d270;
+  color: #3b51cf;
   font-size: 16px;
 }
 .aon-df2-rating span.text-gray {
@@ -18465,7 +18472,8 @@ Home page Two CSS
   bottom: 0px;
   display: flex;
   justify-content: center;
-  background-color: rgba(227, 210, 112, 0.8);
+  /* background-color: rgba(227, 210, 112, 0.8); */
+  background-color: rgb(124 112 227 / 80%);
   transition: 0.5s all ease;
   overflow: hidden;
   border-radius: var(--site-radius);
@@ -18574,7 +18582,7 @@ Home page Two CSS
   position: relative;
 }
 .aon-farm-blog-1 .post-info .post-date {
-  color: #75b16c;
+  color: #2733d5;
   display: inline-flex;
   align-items: center;
 }
@@ -18589,7 +18597,7 @@ Home page Two CSS
   margin-bottom: 0px;
 }
 .aon-farm-blog-1 .post-meta ul li {
-  color: #75b16c;
+  color: #2733d5;
   position: relative;
   display: inline-block;
 }
@@ -18625,7 +18633,7 @@ Inner pages Css
   height: 100%;
 }
 .aon-page-benner-area2 {
-  background-image: url(../images/inner-banner.jpg);
+  background-image: url("{{asset('assets/frontendmages/inner-banner.jpg')}}");
   position: relative;
   background-size: cover;
   background-position: center;
@@ -18691,7 +18699,7 @@ Inner pages Css
   font-weight: normal;
   line-height: 1;
   font-size: 54px;
-  color: #e3d270;
+  color: #3b51cf;
 }
 .sf-banner-breadcrumbs-nav2:before {
   position: absolute;
@@ -18715,7 +18723,7 @@ Inner pages Css
 }
 
 .sf-banner-breadcrumbs-nav2 ul {
-  background-color: #e3d270;
+  background-color: #3b51cf;
   list-style: none;
   margin: 0;
   padding: 6px 30px;
@@ -18786,7 +18794,7 @@ Inner pages Css
 }
 .sf-banner-vid-section .video-play-btn2 i {
   font-size: 20px;
-  color: #75b16c;
+  color: #2733d5;
 }
 .sf-banner-vid-section .video-play-btn2 span {
   padding-left: 20px;
@@ -18827,10 +18835,10 @@ Inner pages Css
   margin-right: 20px;
   font-size: 70px;
   line-height: 1px;
-  color: #75b16c;
+  color: #2733d5;
 }
 .aon-sd-title .aon-sd-title-content span {
-  color: #75b16c;
+  color: #2733d5;
   margin-bottom: 10px;
   display: block;
 }
@@ -18853,11 +18861,11 @@ Inner pages Css
   position: absolute;
   left: 0px;
   top: 4px;
-  color: #75b16c;
+  color: #2733d5;
   font-size: 18px;
 }
 .aon-list-check-style1 ul li span {
-  color: #75b16c;
+  color: #2733d5;
   display: inline-block;
   font-weight: 700;
 }
@@ -18890,7 +18898,7 @@ Inner pages Css
   background-color: rgba(117, 177, 108, 0.07);
 }
 .site-pagination2 .page-item.active .page-link {
-  background-color: #75b16c;
+  background-color: #2733d5;
   color: #ffffff;
 }
 .site-pagination2 .pagination > li > a {
@@ -18900,7 +18908,7 @@ Inner pages Css
   min-width: 36px;
 }
 .site-pagination2 .pagination > li > a:hover {
-  background-color: #75b16c;
+  background-color: #2733d5;
   color: #ffffff;
 }
 
@@ -18928,7 +18936,7 @@ Inner pages Css
   font-size: 24px;
   line-height: 1;
   border-radius: 5px;
-  background-color: #75b16c;
+  background-color: #2733d5;
   color: #ffffff;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -18940,7 +18948,7 @@ Inner pages Css
   margin-right: 0px;
 }
 .aon-paging-arrow button:hover {
-  color: #75b16c;
+  color: #2733d5;
   background-color: rgba(117, 177, 108, 0.07);
 }
 
@@ -18988,16 +18996,16 @@ Inner pages Css
 }
 
 .side-bar2 .widget_services ul li.active a {
-  color: #75b16c;
+  color: #2733d5;
 }
 .side-bar2 .widget_services ul li.active::after {
-  color: #75b16c;
+  color: #2733d5;
 }
 .side-bar2 .widget_services ul li:hover::after {
-  color: #75b16c;
+  color: #2733d5;
 }
 .side-bar2 .widget_services ul li:hover a {
-  color: #75b16c;
+  color: #2733d5;
 }
 .side-bar2 .widget_services ul li a {
   margin-left: 0px;
@@ -19091,10 +19099,10 @@ Inner pages Css
   margin-right: 15px;
 }
 .widget_download-file .dl-btn.primary {
-  background-color: #75b16c;
+  background-color: #2733d5;
 }
 .widget_download-file .dl-btn.secondry {
-  background-color: #e3d270;
+  background-color: #3b51cf;
 }
 
 /*We need help*/
@@ -19129,7 +19137,7 @@ Inner pages Css
   right: 0px;
   bottom: 0px;
   position: absolute;
-  background-image: url(../images/need-help-bg.png);
+  background-image: url("{{asset('assets/frontendmages/need-help-bg.png')}}");
   width: 124px;
   height: 212px;
 }
@@ -19139,7 +19147,7 @@ Inner pages Css
 }
 
 .aon-widget-help-bottom {
-  background-color: #75b16c;
+  background-color: #2733d5;
   color: #fff;
   padding: 20px 30px;
   border-radius: 10px;
@@ -19191,7 +19199,7 @@ Inner pages Css
 }
 
 .aon-testmo-wrap:hover {
-  border: 2px solid #75b16c;
+  border: 2px solid #2733d5;
 }
 .aon-faq-media {
   margin-bottom: 60px;
@@ -19202,7 +19210,7 @@ Inner pages Css
   width: 60px;
   height: 60px;
   top: -35px;
-  background: #e3d270;
+  background: #3b51cf;
   border-radius: 100%;
   left: 50%;
   line-height: 60px;
@@ -19281,7 +19289,7 @@ Inner pages Css
   color: #fff;
 }
 .accordion-button:not(.collapsed) {
-  background-color: #75b16c !important;
+  background-color: #2733d5 !important;
   color: #fff !important;
 }
 
@@ -19312,7 +19320,7 @@ Inner pages Css
 .single-product-price {
   font-size: 32px;
   font-family: "Cormorant";
-  color: #75b16c;
+  color: #2733d5;
   font-weight: 600;
   margin-right: 30px;
 }
@@ -19352,7 +19360,7 @@ Inner pages Css
   position: absolute;
   left: 0px;
   top: 4px;
-  color: #75b16c;
+  color: #2733d5;
   font-size: 18px;
 }
 
@@ -19389,7 +19397,7 @@ Inner pages Css
 }
 .itm-Quantity-wrap .btn:hover {
   color: #fff;
-  background: #75b16c;
+  background: #2733d5;
 }
 .itm-Quantity-wrap #itm-Quantity.form-control {
   background-color: transparent;
@@ -19420,20 +19428,20 @@ Inner pages Css
   transition: 0.5s all ease;
 }
 .aon-btn-wishlist:hover {
-  background-color: #75b16c;
-  color: #e3d270;
+  background-color: #2733d5;
+  color: #3b51cf;
 }
 .aon-btn-wishlist:hover i {
-  color: #e3d270;
+  color: #3b51cf;
 }
 
 .aon-btn-cart {
   outline: none;
-  color: #e3d270;
+  color: #3b51cf;
   padding: 12px 30px;
   position: relative;
   display: inline-block;
-  background-color: #75b16c;
+  background-color: #2733d5;
   border: none;
   font-size: 16px;
   transition: 0.5s all ease;
@@ -19443,7 +19451,7 @@ Inner pages Css
 }
 .aon-btn-cart i {
   margin-right: 10px;
-  color: #e3d270;
+  color: #3b51cf;
   transition: 0.5s all ease;
 }
 .aon-btn-cart:hover {
@@ -19585,7 +19593,7 @@ Comment Form
   margin-bottom: 20px;
 }
 .comment-title-rating-section b {
-  color: #75b16c;
+  color: #2733d5;
   margin: 0px 3px;
 }
 @media only screen and (max-width: 767px) {
@@ -19698,7 +19706,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 }
 .aon-custom-nav > .nav-item > .nav-link.active {
   color: #222;
-  background: #75b16c;
+  background: #2733d5;
   position: relative;
 }
 
@@ -19790,7 +19798,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   outline: none;
 }
 .woocommerce-result-count span {
-  color: #75b16c;
+  color: #2733d5;
 }
 .product-listing-area {
   margin-bottom: 30px;
@@ -19856,14 +19864,14 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   margin-right: 30px;
   font-size: 32px;
   font-weight: 700;
-  color: #75b16c;
+  color: #2733d5;
   font-family: "Cormorant";
 }
 .aon-shop2-list:hover .aon-shop2-price {
-  color: #e3d270;
+  color: #3b51cf;
 }
 .aon-shop2-box:hover .aon-shop2-price {
-  color: #e3d270;
+  color: #3b51cf;
 }
 .aon-shop2-btn {
   background: #ededf0;
@@ -19881,7 +19889,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   margin-left: 10px;
 }
 .aon-shop2-btn:hover {
-  background: #e3d270;
+  background: #3b51cf;
   color: #fff;
 }
 .aon-shop2-box:hover .aon-shop2-btn {
@@ -19889,8 +19897,8 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   color: #fff;
 }
 .aon-shop2-box:hover .aon-shop2-btn:hover {
-  background: #e3d270;
-  color: #75b16c;
+  background: #3b51cf;
+  color: #2733d5;
 }
 
 .aon-con-map {
@@ -19968,7 +19976,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   min-width: 70px;
   height: 70px;
   background: #f5faf5;
-  color: #75b16c;
+  color: #2733d5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19988,7 +19996,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 }
 .aon-con-text strong {
   font-size: 24px;
-  color: #75b16c;
+  color: #2733d5;
   font-family: "Cormorant";
 }
 
@@ -20076,7 +20084,7 @@ table td {
 }
 .shopping-table .aon-ct-product-price {
   font-size: 24px;
-  color: #75b16c;
+  color: #2733d5;
   font-family: "Cormorant";
   min-width: 130px;
 }
@@ -20201,7 +20209,7 @@ table td {
 }
 
 .shopping-cart-total.style2 .sub_total {
-  background-color: #75b16c;
+  background-color: #2733d5;
   color: #fff;
   border-radius: 5px;
 }
@@ -20280,7 +20288,7 @@ table td {
   position: relative;
 }
 .aon-bd-mid .post-info .post-date {
-  color: #75b16c;
+  color: #2733d5;
   margin-bottom: 10px;
 }
 .aon-bd-mid .post-info .post-date i {
@@ -20300,13 +20308,13 @@ table td {
   margin-right: 20px;
 }
 .aon-bd-title .aon-bd-title-content span {
-  color: #75b16c;
+  color: #2733d5;
   margin-bottom: 10px;
   display: block;
 }
 
 .bd-blockquote {
-  border-left: 3px solid #75b16c;
+  border-left: 3px solid #2733d5;
   padding-left: 40px;
   display: table;
 }
@@ -20347,7 +20355,7 @@ table td {
 }
 .bd-blockquote .content .quoter {
   font-size: 22px;
-  color: #75b16c;
+  color: #2733d5;
   font-family: "Cormorant";
   margin-bottom: 10px;
   font-weight: 800;
@@ -20396,7 +20404,7 @@ table td {
   margin-bottom: 4px;
 }
 .aon-sidebar-tags-wrap .tagcloud a:hover {
-  background-color: #75b16c;
+  background-color: #2733d5;
   color: #fff;
 }
 
@@ -20423,7 +20431,7 @@ table td {
   margin-right: 3px;
 }
 .post-social-icons li a:hover {
-  color: #75b16c;
+  color: #2733d5;
 }
 
 @media only screen and (max-width: 991px) {
@@ -20452,7 +20460,7 @@ table td {
   height: 50px;
   text-align: center;
   border: 2px solid #fff;
-  color: #75b16c;
+  color: #2733d5;
   font-size: 14px;
   border-radius: 50%;
   line-height: 46px;
@@ -20491,14 +20499,14 @@ table td {
 /* Theme default button */
 .site-button-outline {
   outline: none;
-  color: #75b16c;
+  color: #2733d5;
   padding: 20px 30px;
   letter-spacing: 1px;
   position: relative;
   cursor: pointer;
   display: inline-table;
   background-color: transparent;
-  border: 2px solid #75b16c;
+  border: 2px solid #2733d5;
   font-size: 16px;
   transition: 0.5s all ease;
   border-radius: 5px;
@@ -20532,7 +20540,7 @@ table td {
 .rev-banner-offer-block {
   width: 200px;
   height: 200px;
-  background-color: #75b16c;
+  background-color: #2733d5;
   font-family: "Cormorant";
   border-radius: 50%;
   text-align: center !important;
@@ -20547,7 +20555,7 @@ table td {
 .rev-banner-offer-block:after {
   width: calc(100% - 20px);
   height: calc(100% - 20px);
-  border: 2px dashed #e3d270;
+  border: 2px dashed #3b51cf;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -20564,7 +20572,7 @@ table td {
   line-height: 18px !important;
 }
 .rev-banner-offer-block .rev-discount {
-  color: #e3d270;
+  color: #3b51cf;
   font-size: 78px !important;
   line-height: 78px !important;
 }
@@ -20576,7 +20584,7 @@ table td {
   .rev-banner-offer-block {
     width: 140px;
     height: 140px;
-    background-color: #75b16c;
+    background-color: #2733d5;
     font-family: "Cormorant";
     border-radius: 50%;
     text-align: center !important;
@@ -20825,7 +20833,7 @@ section {
   height: 24px;
   margin-top: -24px;
   z-index: 1;
-  background-image: url("../images/top-line.png");
+  background-image: url("{{asset('assets/frontend/images/top-line.png')}}");
   background-repeat: repeat-x;
 }
 .site-top-line2 {
@@ -20836,7 +20844,7 @@ section {
   height: 24px;
   margin-top: -24px;
   z-index: 1;
-  background-image: url("../images/top-line2.png");
+  background-image: url("{{asset('assets/frontend/images/top-line2.png')}}");
   background-repeat: repeat-x;
 }
 .site-bot-line {
@@ -20847,7 +20855,7 @@ section {
   height: 24px;
   margin-bottom: -24px;
   z-index: 1;
-  background-image: url("../images/bot-line.png");
+  background-image: url("{{asset('assets/frontend/images/bot-line.png')}}");
   background-repeat: repeat-x;
 }
 .site-bot-line2 {
@@ -20858,7 +20866,7 @@ section {
   height: 24px;
   margin-bottom: -24px;
   z-index: 1;
-  background-image: url("../images/bot-line2.png");
+  background-image: url("{{asset('assets/frontend/images/bot-line2.png')}}");
   background-repeat: repeat-x;
 }
 

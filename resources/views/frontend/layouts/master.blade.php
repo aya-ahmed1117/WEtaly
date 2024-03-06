@@ -10,8 +10,9 @@
     <meta name="description" content="" />
 
     <!-- FAVICONS ICON -->
-    <link rel="icon" href="{{asset('assets/frontend/images/favicon.ico')}}" type="image/x-icon" />
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="icon" href="{{asset('assets/frontend/images/logo3.png')}}" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" 
+    href="{{asset('assets/frontend/images/logo3.png')}}" />
 
     <!-- PAGE TITLE HERE -->
     <title>Home Page</title>
@@ -47,8 +48,7 @@
       href="{{asset('assets/frontend/plugins/revolution/revolution/css/settings.css')}}"
     />
     <!-- REVOLUTION NAVIGATION STYLE -->
-    <link
-      rel="stylesheet"
+    <link  rel="stylesheet"
       type="text/css"
       href="{{asset('assets/frontend/plugins/revolution/revolution/css/navigation.css')}}"
     />
@@ -56,18 +56,18 @@
 
   <body>
     <!-- LOADING AREA START ===== -->
-    @include('frontend.partials.layouts.loading')
+    @include('frontend.includes.layouts.loading')
     <!-- LOADING AREA  END ====== -->
 
     <div class="page-wraper">
       
-      @include('frontend.partials.layouts.header')
+      @include('frontend.includes.layouts.header')
      
 
       <!-- CONTENT START -->
-      <div class="page-content">
+      <div class="page-content"> 
         <!-- SLIDER START -->
-        @include('frontend.partials.layouts.sidebar')
+        @include('frontend.includes.layouts.sidebar')
         <!-- SLIDER END -->
 
         <!-- About Section -->
@@ -80,7 +80,7 @@
                 ><img src="{{asset('assets/frontend/images/icon.')}}png" alt=""
               /></span>
               <h2 class="aon-title aon-title-line">
-                Welcome to <span>Milcandy</span> Farm
+                Welcome to <span>WEtaly</span>
               </h2>
               <p>
                 Fusce sollicitudin eros id ex maximus gravida non vitae ante.
@@ -193,7 +193,7 @@
 
             <!--Welcome Pic Circle-->
             <div class="aon-welcome-pic animate-v">
-              <img src="{{asset('assets/frontend/images/circle-pic.png')}}" alt="" />
+              <img src="{{asset('assets/frontend/images/wetaly/122.jpg')}}" alt="" />
             </div>
           </div>
           <div class="site-bot-line"></div>
@@ -279,13 +279,13 @@
         <!-- About 2 Section -->
         <section
           class="aon-vodeo-area position-relative"
-          style="background-image: url({{asset('assets/frontend/images/background/bg1.jpg)')}}"
+          style="background-image: url('{{asset('assets/frontend/images/background/bg1.jpg')}}')"
         >
           <div class="aon-overlay-area"></div>
           <div class="container">
             <!--Title Section Start-->
             <div class="aon-vodeo-section text-center">
-              <h2 class="aon-vodeo-title">Dairy Farm Matters To The Future.</h2>
+              <h2 class="aon-vodeo-title">Dairy Matters To The Future.</h2>
               <div class="play-now-statice">
                 <a
                   href="https://www.youtube.com/watch?v=c1XNqw2gSbU"
@@ -837,9 +837,9 @@
                   <div class="aon-insta-overlay">
                     <a
                       class="elem"
-                      href="images/insta-gallery/img-1.png"
+                      href="{{asset('images/insta-gallery/img-1.png')}}"
                       title="Nh-16 Highway Bridge"
-                      data-lcl-thumb="images/insta-gallery/img-1.png"
+                      data-lcl-thumb="{{asset('images/insta-gallery/img-1.png')}}"
                     >
                       <i class="feather-instagram"></i>
                     </a>
@@ -856,9 +856,9 @@
                   <div class="aon-insta-overlay">
                     <a
                       class="elem"
-                      href="images/insta-gallery/img-2.png"
+                      href="{{asset('images/insta-gallery/img-2.png')}}"
                       title="Nh-16 Highway Bridge"
-                      data-lcl-thumb="images/insta-gallery/img-2.png"
+                      data-lcl-thumb="{{asset('images/insta-gallery/img-2.png')}}"
                     >
                       <i class="feather-instagram"></i>
                     </a>
@@ -875,9 +875,9 @@
                   <div class="aon-insta-overlay">
                     <a
                       class="elem"
-                      href="images/insta-gallery/img-3.png"
+                      href="{{asset('images/insta-gallery/img-3.png')}}"
                       title="Nh-16 Highway Bridge"
-                      data-lcl-thumb="images/insta-gallery/img-3.png"
+                      data-lcl-thumb="{{asset('images/insta-gallery/img-3.png')}}"
                     >
                       <i class="feather-instagram"></i>
                     </a>
@@ -925,7 +925,7 @@
                           <img
                             title="title"
                             alt=""
-                            src="images/blog/blog-grid/img-1.jpg"
+                            src="{{asset('assets/frontend/images/blog/blog-grid/img-1.jpg')}}"
                           />
                         </div>
                         <div class="post-info">
@@ -939,7 +939,7 @@
                           <div class="post-text">
                             <h4 class="post-title">
                               <a href="blog-detail.html"
-                                >Farm improvement depends on Their farm plan.</a
+                                >improvement depends on Their plan.</a
                               >
                             </h4>
                           </div>
@@ -948,7 +948,7 @@
                             <ul>
                               <li class="post-author">
                                 <img
-                                  src="images/blog/blog-grid/thumb/thumb-1.png"
+                                  src="{{asset('assets/frontend/images/blog/blog-grid/thumb/thumb-1.png')}}"
                                   alt=""
                                 />
                                 By <a href="#">Creativemela</a>
@@ -970,7 +970,7 @@
                           <img
                             title="title"
                             alt=""
-                            src="images/blog/blog-grid/img-2.jpg"
+                            src="{{asset('assets/frontend/images/blog/blog-grid/img-2.jpg')}}"
                           />
                         </div>
                         <div class="post-info">
@@ -994,7 +994,7 @@
                             <ul>
                               <li class="post-author">
                                 <img
-                                  src="images/blog/blog-grid/thumb/thumb-2.png"
+                                  src="{{asset('assets/frontend/images/blog/blog-grid/thumb/thumb-2.png')}}"
                                   alt=""
                                 />
                                 By <a href="#">Creativemela</a>
@@ -1016,7 +1016,7 @@
                           <img
                             title="title"
                             alt=""
-                            src="images/blog/blog-grid/img-3.jpg"
+                            src="{{asset('assets/frontend/images/blog/blog-grid/img-3.jpg')}}"
                           />
                         </div>
                         <div class="post-info">
@@ -1040,7 +1040,7 @@
                             <ul>
                               <li class="post-author">
                                 <img
-                                  src="images/blog/blog-grid/thumb/thumb-3.png"
+                                  src="{{asset('assets/frontend/images/blog/blog-grid/thumb/thumb-3.png')}}"
                                   alt=""
                                 />
                                 By <a href="#">Creativemela</a>
@@ -1092,7 +1092,7 @@
       <!-- CONTENT END -->
 
       <!-- FOOTER START -->
-      @include('frontend.partials.layouts.footer')
+      @include('frontend.includes.layouts.footer')
       <!-- FOOTER END -->
 
       <!-- BUTTON TOP START -->
@@ -1118,7 +1118,7 @@
                 <li class="woocommerce-mini-cart-item mini_cart_item">
                   <a href="#" class="remove remove_from_cart_button">×</a>
                   <a class="woocommerce-price-title" href="#"
-                    ><img src="{{asset('assets/frontend/images/cart/Img-1.jpg" alt="" />')}}Synergistic
+                    ><img src="{{asset('assets/frontend/images/cart/Img-1.jpg')}}" alt="" />Synergistic
                     Marble Lamp</a
                   >
                   <span class="quantity"
@@ -1134,7 +1134,7 @@
                 <li class="woocommerce-mini-cart-item mini_cart_item">
                   <a href="#" class="remove remove_from_cart_button">×</a>
                   <a class="woocommerce-price-title" href="#"
-                    ><img src="{{asset('assets/frontend/images/cart/Img-1.jpg" alt="" />')}}Synergistic
+                    ><img src="{{asset('assets/frontend/images/cart/Img-1.jpg')}}" alt="" />Synergistic
                     Marble Lamp</a
                   >
                   <span class="quantity"
@@ -1150,7 +1150,7 @@
                 <li class="woocommerce-mini-cart-item mini_cart_item">
                   <a href="#" class="remove remove_from_cart_button">×</a>
                   <a class="woocommerce-price-title" href="#"
-                    ><img src="{{asset('assets/frontend/images/cart/Img-1.jpg" alt="" />')}}Synergistic
+                    ><img src="{{asset('assets/frontend/images/cart/Img-1.jpg')}}" alt="" />Synergistic
                     Marble Lamp</a
                   >
                   <span class="quantity"
@@ -1166,7 +1166,7 @@
                 <li class="woocommerce-mini-cart-item mini_cart_item">
                   <a href="#" class="remove remove_from_cart_button">×</a>
                   <a class="woocommerce-price-title" href="#"
-                    ><img src="{{asset('assets/frontend/images/cart/Img-1.jpg" alt="" />')}}Synergistic
+                    ><img src="{{asset('assets/frontend/images/cart/Img-1.jpg')}}" alt="" />Synergistic
                     Marble Lamp</a
                   >
                   <span class="quantity"
@@ -1182,7 +1182,7 @@
                 <li class="woocommerce-mini-cart-item mini_cart_item">
                   <a href="#" class="remove remove_from_cart_button">×</a>
                   <a class="woocommerce-price-title" href="#"
-                    ><img src="{{asset('assets/frontend/images/cart/Img-1.jpg" alt="" />')}}Synergistic
+                    ><img src="{{asset('assets/frontend/images/cart/Img-1.jpg')}}" alt="" />Synergistic
                     Marble Lamp</a
                   >
                   <span class="quantity"
@@ -1198,7 +1198,7 @@
                 <li class="woocommerce-mini-cart-item mini_cart_item">
                   <a href="#" class="remove remove_from_cart_button">×</a>
                   <a class="woocommerce-price-title" href="#"
-                    ><img src="{{asset('assets/frontend/images/cart/Img-1.jpg" alt="" />')}}Synergistic
+                    ><img src="{{asset('assets/frontend/images/cart/Img-1.jpg')}}" alt="" />Synergistic
                     Marble Lamp</a
                   >
                   <span class="quantity"
@@ -1277,6 +1277,6 @@
     <script src="{{asset('assets/frontend/plugins/revolution/revolution/js/extensions/revolution-plugin.js')}}"></script>
 
     <!-- REVOLUTION SLIDER SCRIPT FILES -->
-    <script src="{{asset('assets/frontend/js/rev-script-2.js')}}"></script>
+    <script src="{{asset('assets/frontend/js/rev-script-1.js')}}"></script>
   </body>
 </html>

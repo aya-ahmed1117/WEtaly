@@ -15,7 +15,7 @@
     <div class="card-body login-card-body">
       <p class="login-box-msg">Sign in to start your session</p>
 
-     
+    
       @include('dashboard.pages.auth.forms.indexform')
 
       <p class="mb-1">
