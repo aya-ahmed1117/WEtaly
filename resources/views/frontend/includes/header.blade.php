@@ -64,67 +64,30 @@
             class="nav-animation header-nav navbar-collapse collapse d-flex justify-content-center"
           >
             <ul class="nav navbar-nav">
-              <li class="has-child current-menu-item">
-                <a href="javascript:;">Home</a>
-                <ul class="sub-menu">
-                  <li><a href="index.html">Home 1</a></li>
-                  <li><a href="index-2.html">Home 2</a></li>
-                </ul>
+              <li class="current-menu-item">
+                <a href="{{ route('frontend.homepage') }}">Home</a>
               </li>
-              <li><a href="about-1.html">About us</a></li>
+              <li><a href="{{ route('frontend.about') }}">About us</a></li>
               <li class="has-child">
                 <a href="javascript:;">Services</a>
                 <ul class="sub-menu">
-                  <li><a href="service-page.html">Services</a></li>
-                  <li><a href="service-detail.html">Service detail</a></li>
+                  <li><a href="{{ route('frontend.services') }}">Services</a></li>
+                  <li><a href="{{ route('frontend.service-details') }}">Service detail</a></li>
                 </ul>
               </li>
 
-              <li class="has-child">
-                <a href="javascript:;">Pages</a>
-                <ul class="sub-menu">
-                  <li><a href="faq.html">Faq</a></li>
-                  <li><a href="testimonials.html">Testimonial</a></li>
-                  <li><a href="our-team.html">Our Team</a></li>
-                  <li><a href="gallery.html">Gallery</a></li>
-                </ul>
-              </li>
-
-              <li class="has-child">
-                <a href="javascript:;">Product</a>
-                <ul class="sub-menu">
-                  <li><a href="product-grid.html">Product grid</a></li>
-                  <li>
-                    <a href="product-grid-sidebar.html"
-                      >Product grid sidebar</a
-                    >
-                  </li>
-                  <li>
-                    <a href="product-list-sidebar.html"
-                      >Product list sidebar</a
-                    >
-                  </li>
-                  <li><a href="shop-detail.html">Shop detail</a></li>
-                  <li>
-                    <a href="shop-detail-sidebar.html">Shop detail</a>
-                  </li>
-                  <li><a href="cart.html">Cart</a></li>
-                  <li><a href="checkout.html">Checkout</a></li>
-                </ul>
+              <li class="">
+                <a href="{{ route('frontend.products') }}">Products</a>
               </li>
 
               <li class="has-child">
                 <a href="javascript:;">Blog</a>
                 <ul class="sub-menu">
-                  <li><a href="blog-grid.html">Blog grid</a></li>
-                  <li>
-                    <a href="blog-grid-sidebar.html">Blog grid sidebar</a>
-                  </li>
-                  <li><a href="blog-list.html">Blog list</a></li>
-                  <li><a href="blog-detail.html">Blog Detail</a></li>
+                  <li><a href="{{ route('frontend.blog') }}">Blog</a></li>
+                  <li><a href="{{ route('frontend.blog-details') }}">Blog Detail</a></li>
                 </ul>
               </li>
-              <li><a href="contact.html">Contact us</a></li>
+              <li><a href="{{ route('frontend.contact') }}">Contact us</a></li>
             </ul>
           </div>
 
