@@ -55,10 +55,7 @@
                                         {{$slider->name}}</td>
                                         <td style="min-width: 250px; max-width: 250px" class="" data-mdb-field="company">
                                         <div class="media">
-
-    <img src="{{asset("storage/app/".$slider->image)}}" class="img-size-50 mr-3 img-circle">
-
-                                            {{-- <img src="{{asset("storage/app/".$slider->image)}}" class="img-size-50 mr-3 img-circle"> --}}
+    <img src='{{asset("storage/$slider->image")}}' class="img-size-50 mr-3 img-circle">
 
                                           </div>
                                         </td>
